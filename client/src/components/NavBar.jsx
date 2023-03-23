@@ -35,7 +35,6 @@ const NavBar = () => {
                 </IconButton>
             </FlexBetween>
         </FlexBetween>
-
         {/* on the lright*/}
         <FlexBetween gap ="1.5rem">
             <IconButton onClick = {() => dispatch(setMode())}>
@@ -50,7 +49,6 @@ const NavBar = () => {
             </IconButton>
         </FlexBetween>
     </Toolbar>
-    
     </AppBar>
   )
 }
