@@ -24,7 +24,7 @@ const Layout = () => {
       />
       <Box>
         <NavBar
-          // user={data || {}}
+          user={data || {}}
           isSidebarOpen={isSidebarOpen}
           setIsSidebarOpen={setIsSidebarOpen}
         />
