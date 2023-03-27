@@ -15,7 +15,7 @@ import salesRoutes from './routes/sales.js';
 import User from './models/User.js';
 import { dataUser, dataProduct, dataProductStat } from './data/index.js';
 import Product from './models/Product.js';
-import { dataProductStat } from './data/index.js';
+import ProductStat from './models/ProductStat.js';
 
 /*CONFIGURATION*/
 
@@ -46,6 +46,8 @@ mongoose
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
     // one time adding data
+    // Product.insertMany(dataProduct);
+    // ProductStat.insertMany(dataProductStat);
     // User.insertMany(dataUser);
   })
   .catch((error) => console.log(`${error} did not connect`));
